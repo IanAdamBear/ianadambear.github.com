@@ -1,0 +1,20 @@
+GEM
+  specs:
+    addressable (2.5.1)
+      public_suffix (~> 2.0, >= 2.0.2)
+    kramdown (1.13.2)
+    multi_json (1.12.1)
+    public_suffix (2.0.5)
+    pygments.rb (1.1.2)
+      multi_json (>= 1.0.0)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  addressable
+  kramdown
+  pygments.rb
+
+BUNDLED WITH
+   1.14.6

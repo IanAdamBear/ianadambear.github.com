@@ -4,6 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var jade        = require('gulp-jade');
+var merge       = require('merge-stream');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -53,16 +54,16 @@ gulp.task('sass', function () {
 });
 
 
-gulp.task('inculdes-jade', function (){
-  return gulp.src('_includes/jade/*.jade')
+gulp.task('includes-jade', function (){
+  var folders = gulp.src('_includes/_jade/*/*.jade')
   .pipe(jade())
   .pipe(gulp.dest('_includes'));
-});
 
-gulp.task('layouts-jade', function (){
-  return gulp.src('_layouts/jade/*.jade')
+  var root = gulp.src('_includes/_jade/*.jade')
   .pipe(jade())
-  .pipe(gulp.dest('_layouts'));
+  .pipe(gulp.dest('_includes'));
+
+  return merge(folders, root);
 });
 
 /**
@@ -71,8 +72,7 @@ gulp.task('layouts-jade', function (){
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch('_includes/jade/*.jade', ['includes-jade']);
-    gulp.watch('_layouts/jade/*.jade', ['layouts-jade']);
+    gulp.watch(['_includes/_jade/*/*.jade', '_includes/_jade/*.jade'], ['includes-jade']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Patua+One|Quattrocento+Sans");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Slabo+27px|Zilla+Slab:300,400,600");
 /* Eric Meyer's CSS Reset
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -302,23 +302,51 @@ table {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
+header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.social-icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  .social-icons a {
+    font-size: 30px;
+    color: black;
+    padding: 10px 8px; }
+
 h2 {
-  color: #e6f0f0;
-  font-family: 'Patua One';
-  margin: 0 20px;
-  font-size: 84px;
+  color: black;
+  font-family: 'Zilla Slab';
+  padding: 10px 40px 20px 40px;
+  font-size: 68px;
   text-align: center;
-  padding-top: 20px;
-  text-shadow: -1px -1px 0 #4e4e4e,  1px -1px 0 #4e4e4e,    -1px 1px 0 #4e4e4e,    1px 1px 0 #4e4e4e; }
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  display: block; }
 
-img {
-  width: 50%;
-  -webkit-transform: translate(50%, 0);
-          transform: translate(50%, 0); }
-
-@media (max-width: 600px) {
-  h2 {
-    font-size: 50px; } }
+.category-container {
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 20px; }
+  .category-container .category-link {
+    text-decoration: none;
+    font-family: 'Slabo 27px';
+    color: black;
+    margin: 20px; }
 
 body {
-  background-color: #e6f0f0; }
+  background-color: #fafaff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }

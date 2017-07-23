@@ -1,3 +1,4 @@
-gem 'pygments.rb' 
+gem 'pygments.rb'
 gem 'kramdown'
 gem 'addressable'
+gem 'rouge'

@@ -1,9 +1,14 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="post-container">
+  <h2 class="post-title">{{ page.title }}</h2>
+  <p class="post-date">{{ page.date | date_to_string }}</p>
+  {% if page.featuredImage %}
+    <img class="post-featured-image" src="{{ page.featuredImage }}" />
+  {% endif %}
 
-<div class="post">
-{{ content }}
+  <div class="post">
+  {{ content }}
+  </div>
 </div>

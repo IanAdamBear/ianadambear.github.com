@@ -1,4 +1,4 @@
-name: Your New Jekyll Site
+name: Ian Adam Bear
 markdown: kramdown
-highlighter: pygments.rp # or rouge or null
+highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]

@@ -5,7 +5,8 @@ header
 .social-icons
    display: flex
    align-self: center
-
+   height: 50px
+   cursor: pointer
    a
      font-size: 30px
      color: black
@@ -22,3 +23,12 @@ header
   margin: 0 auto
   border-bottom: 1px solid black
   display: block
+
+  @media screen and (max-width: 400px)
+    font-size: 32px
+
+  @media screen and (max-width: 500px)
+    font-size: 44px
+  a
+    text-decoration: none
+    color: inherit

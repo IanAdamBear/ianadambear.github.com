@@ -312,7 +312,9 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  height: 50px;
+  cursor: pointer; }
   .social-icons a {
     font-size: 30px;
     color: black;
@@ -329,36 +331,53 @@ header {
   margin: 0 auto;
   border-bottom: 1px solid black;
   display: block; }
+  @media screen and (max-width: 400px) {
+    .header-title {
+      font-size: 32px; } }
+  @media screen and (max-width: 500px) {
+    .header-title {
+      font-size: 44px; } }
+  .header-title a {
+    text-decoration: none;
+    color: inherit; }
 
 .category-container {
   -ms-flex: 1 1 auto;
       flex: 1 1 auto;
-  -ms-flex-align: center;
-      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin-top: 20px; }
   .category-container .category-link {
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
     text-decoration: none;
     font-family: 'Slabo 27px';
     color: black;
-    margin: 20px; }
+    margin: 15px; }
 
 .post-container {
   -ms-flex: 0 1 auto;
       flex: 0 1 auto;
-  max-width: 800px;
+  width: 800px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin-top: 30px; }
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  padding: 10px; }
 
 .post-title {
   -ms-flex: 1 1 auto;
       flex: 1 1 auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   font-family: 'Slabo 27px';
   font-size: 32px;
   text-decoration: none;

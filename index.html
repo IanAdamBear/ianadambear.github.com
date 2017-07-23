@@ -5,7 +5,7 @@ layout: default
   {% for post in site.posts %}
     <li>
       <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
-      <span class="post-date">{{post.date}}</span>
+      <span class="post-date">{{post.date | date_to_string }}</span>
       {% if post.featuredImage %}
         <img class="post-featured-image" src="{{ post.featuredImage }}" />
       {% endif %}

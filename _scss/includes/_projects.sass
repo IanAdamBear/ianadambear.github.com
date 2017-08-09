@@ -3,10 +3,11 @@
 
   .project
     font-family: 'Raleway'
+    margin-bottom: 20px
 
     h2
       font-family: 'Zilla Slab'
-      font-size: 32px
+      font-size: 30px
       color: $primary-font-colour
       margin-bottom: 10px
 
@@ -20,9 +21,11 @@
 
       .project-item-title
         min-width: 120px
+        font-weight: bold
 
-      .project-item-desc
-        
+        @media(max-width: 420px)
+          padding: 6px 0
+
       .progress-text
         padding-top: 2px
 
@@ -34,7 +37,7 @@
         height: 18px
 
         .progress-bar-progress
-          flex: 1 1 auto
+          flex: 0 1 auto
           background-color: $primary-font-colour
           border-top-left-radius: 6px
           border-bottom-left-radius: 6px

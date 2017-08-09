@@ -331,12 +331,12 @@ header {
   margin: 0 auto;
   border-bottom: 1px solid black;
   display: block; }
-  @media screen and (max-width: 400px) {
-    .header-title {
-      font-size: 32px; } }
   @media screen and (max-width: 500px) {
     .header-title {
       font-size: 44px; } }
+  @media screen and (max-width: 400px) {
+    .header-title {
+      font-size: 38px; } }
   .header-title a {
     text-decoration: none;
     color: inherit; }
@@ -463,6 +463,65 @@ header {
         @media (max-width: 420px) {
           .about-page ul li span {
             padding-bottom: 6px; } }
+
+.projects-container {
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  max-width: 800px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 10px; }
+  .projects-container .project {
+    font-family: 'Raleway';
+    margin-bottom: 20px; }
+    .projects-container .project h2 {
+      font-family: 'Zilla Slab';
+      font-size: 30px;
+      color: #aa323c;
+      margin-bottom: 10px; }
+    .projects-container .project .project-item {
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 5px;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+      @media (max-width: 400px) {
+        .projects-container .project .project-item {
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+      .projects-container .project .project-item .project-item-title {
+        min-width: 120px;
+        font-weight: bold; }
+        @media (max-width: 420px) {
+          .projects-container .project .project-item .project-item-title {
+            padding: 6px 0; } }
+      .projects-container .project .project-item .progress-text {
+        padding-top: 2px; }
+      .projects-container .project .project-item .progress-bar {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: auto;
+            flex: auto;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+        max-width: 300px;
+        height: 18px; }
+        .projects-container .project .project-item .progress-bar .progress-bar-progress {
+          -ms-flex: 0 1 auto;
+              flex: 0 1 auto;
+          background-color: #aa323c;
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px; }
+        .projects-container .project .project-item .progress-bar .progress-bar-remaining {
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
+          background-color: lightgrey;
+          border-top-right-radius: 6px;
+          border-bottom-right-radius: 6px; }
 
 body {
   background-color: #fafaff;

@@ -454,8 +454,15 @@ header {
       display: flex;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+      @media (max-width: 420px) {
+        .about-page ul li {
+          -ms-flex-direction: column;
+              flex-direction: column; } }
       .about-page ul li span {
         min-width: 250px; }
+        @media (max-width: 420px) {
+          .about-page ul li span {
+            padding-bottom: 6px; } }
 
 body {
   background-color: #fafaff;

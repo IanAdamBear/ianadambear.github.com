@@ -1,0 +1,46 @@
+.projects-container
+  @include container
+
+  .project
+    font-family: 'Raleway'
+
+    h2
+      font-family: 'Zilla Slab'
+      font-size: 32px
+      color: $primary-font-colour
+      margin-bottom: 10px
+
+    .project-item
+      display: flex
+      margin-bottom: 5px
+      flex: 1 1 auto
+
+      @media(max-width: 400px)
+        flex-direction: column
+
+      .project-item-title
+        min-width: 120px
+
+      .project-item-desc
+        
+      .progress-text
+        padding-top: 2px
+
+      .progress-bar
+        display: flex
+        flex: auto
+        justify-content: flex-start
+        max-width: 300px
+        height: 18px
+
+        .progress-bar-progress
+          flex: 1 1 auto
+          background-color: $primary-font-colour
+          border-top-left-radius: 6px
+          border-bottom-left-radius: 6px
+
+        .progress-bar-remaining
+          flex: 1 1 auto
+          background-color: lightgrey
+          border-top-right-radius: 6px
+          border-bottom-right-radius: 6px

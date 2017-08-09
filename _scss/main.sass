@@ -1,9 +1,13 @@
+$primary-font-colour: rgb(170, 50, 60)
+
 @import url('https://fonts.googleapis.com/css?family=Raleway|Slabo+27px|Zilla+Slab:300,400,600')
 @import "reset"
 @import "syntax"
+@import "includes/mixins"
 @import "includes/header"
 @import "includes/categories"
 @import "includes/posts"
+@import "includes/about"
 
 body
   background-color: rgb(250, 250, 255)
@@ -12,3 +16,7 @@ body
 
 code
   font-family: monospace
+
+.main-container
+  display: flex
+  justify-content: center

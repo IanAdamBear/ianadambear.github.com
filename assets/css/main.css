@@ -350,27 +350,26 @@ header {
       align-self: center;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-top: 20px; }
+  margin-top: 10px; }
   .category-container .category-link {
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
     text-decoration: none;
     font-family: 'Slabo 27px';
     color: black;
-    margin: 15px; }
+    margin: 15px;
+    font-size: 20px; }
 
 .post-container {
-  -ms-flex: 0 1 auto;
-      flex: 0 1 auto;
-  width: 800px;
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  max-width: 800px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding: 10px; }
 
 .post-title {
@@ -419,6 +418,45 @@ header {
       margin-left: 20px;
       padding: 10px; }
 
+.about-page {
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  max-width: 800px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 10px; }
+  .about-page section {
+    margin-bottom: 20px; }
+  .about-page h2 {
+    font-family: 'Zilla Slab';
+    text-align: center;
+    color: #aa323c;
+    font-size: 36px;
+    margin-bottom: 20px; }
+    @media (min-height: 400px) {
+      .about-page h2 {
+        font-size: 26px; } }
+  .about-page p {
+    font-family: 'Raleway';
+    padding: 4px 0;
+    text-align: justify;
+    line-height: 1.3em; }
+  .about-page ul {
+    list-style: none;
+    font-family: 'Raleway'; }
+    .about-page ul li {
+      padding: 4px 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+      .about-page ul li span {
+        min-width: 250px; }
+
 body {
   background-color: #fafaff;
   display: -ms-flexbox;
@@ -428,3 +466,9 @@ body {
 
 code {
   font-family: monospace; }
+
+.main-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }

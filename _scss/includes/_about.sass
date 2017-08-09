@@ -1,0 +1,33 @@
+.about-page
+  @include container
+
+  section
+    margin-bottom: 20px
+
+  h2
+    font-family: 'Zilla Slab'
+    text-align: center
+    color: $primary-font-colour
+    font-size: 36px
+    margin-bottom: 20px
+
+    @media(min-height: 400px)
+      font-size: 26px
+
+  p
+    font-family: 'Raleway'
+    padding: 4px 0
+    text-align: justify
+    line-height: 1.3em
+
+  ul
+    list-style: none
+    font-family: 'Raleway'
+
+    li
+      padding: 4px 0
+      display: flex;
+      justify-content:  flex-start
+
+      span
+        min-width: 250px
